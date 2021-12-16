@@ -96,3 +96,9 @@ $ sudo ln -s /dev/i2c-11 /dev/i2c-1
 
 [Here is a video about this HyperPixel2r project](https://youtu.be/KEdkcJYxZQg)
 
+Run this program:
+
+```
+$ python3 clock-ytsc.py
+```
+
