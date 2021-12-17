@@ -4,7 +4,7 @@ The display’s resolution is 480 by 480 pixels, but as it is round, you must, o
 
 *Quiz: how many pixels are lost due to the rounded corners?*
 
-*Answer: 480 × 480 × (1 - 0.25 π) = 49,444 (almost 21.5%, I hope I got that right).*
+*Answer: 480 × 480 × (1 - 0.25 π) = 49,444 (almost 21.5%).*
 
 It has 18-bit color depth (meaning 262,144 colors) and supports up to 60 frames per second (FPS). The viewing area has a 2.1” or 53.3 mm diameter and a viewing angle of 175°. Its full diameter is 72 mm with a height of 11 mm. With a Pi Zero attached with short stand-offs, the total height (or depth, whatever you prefer) is 17 mm.
 
@@ -44,7 +44,7 @@ $ sudo python3 -m pip install pygame --upgrade
 
 Note that for some reason the center of the screen buffer may not exactly be the center of the screen, it can be off in the vertical direction by several pixels. You can correct this by adding an offset, but the sign of the offset depends on the rotation of the screen. You can see in my code how I handled that. 
 
-In order to print text on the screen with pygame you might have to install ```libsdl2-ttf```:
+In order to print text on the screen with pygame you may have to install ```libsdl2-ttf```:
 
 ```
 $ sudo apt-get install libsdl2-ttf-2.0-0
