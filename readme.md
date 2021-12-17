@@ -44,7 +44,7 @@ $ sudo python3 -m pip install pygame --upgrade
 
 Note that for some reason the center of the screen buffer may not exactly be the center of the screen, it can be off in the vertical direction by several pixels. You can correct this by adding an offset, but the sign of the offset depends on the rotation of the screen. You can see in my code how I handled that. 
 
-In order to print text on the screen with pygame you may have to install ```libsdl2-ttf```:
+In order to print text on the screen with pygame you may have to install ```libsdl2-ttf``` in case you get an error about fonts:
 
 ```
 $ sudo apt-get install libsdl2-ttf-2.0-0
@@ -52,7 +52,7 @@ $ sudo apt-get install libsdl2-ttf-2.0-0
 
 In your program you must also call ```pygame.init``` and load a font before trying to print anything to the screen.
 
-For the YouTube subscriber counter part, you'll need also ```httplib2```:
+For the YouTube subscriber counter part, you'll also need ```httplib2```:
 
 ```
 $ sudo pip3 install httplib2
